@@ -1,0 +1,288 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+header nav .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #38ef7d;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header-content h1 span {
+    color: #38ef7d;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.header-content .btn {
+    padding: 10px 20px;
+    background-color: #38ef7d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.header-content .btn:hover {
+    background-color: #11998e;
+}
+
+/* About Section Styling */
+#about {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section Styling */
+#skills {
+    padding: 50px 20px;
+    background-color: orange;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #11998e;
+    transition: width 1s ease;
+}
+
+.skill-level.java {
+    width: 65%;
+}
+
+.skill-level.c {
+    width: 80%;
+}
+
+.skill-level.python {
+    width: 80%;
+}
+
+.skill-level.html-css {
+    width: 90%;
+}
+
+/* Projects Section Styling */
+#projects {
+    padding: 50px 20px;
+}
+
+#projects h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #666;
+    font-size: 1em;
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #11998e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #38ef7d;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content, .skills-content, .projects-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image, .about-text {
+        margin: 20px 0;
+    }
+}
