@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Hello, I'm <span>CHITTOOR MANJUNATH</span></h1>
+            <p>A Web Developer & Designer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I am a dedicated web developer with a passion for creating interactive, responsive, and visually appealing websites. With expertise in HTML, CSS, JavaScript, and modern frameworks, I bring ideas to life on the web.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="abcd.jpg" alt="Your Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-content">
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                    <div class="skill-level java"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>C</h3>
+                <div class="skill-bar">
+                    <div class="skill-level c"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-level python"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level html-css"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="qr.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>QR CODE SCANNER</h3>
+                    <p>Created a web-based QR code generator by using HTML, CSS, and JavaScript. It allows users to enter a URL or text and generate a corresponding QR code. .</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="flop.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Flippy Bird Game</h3>
+                    <p> Players tap the screen to make a bird flap its wings and navigate through gaps between pipes. The goal is to pass through as many pipes as possible without crashing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p></p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:abcd@gmail.com">manjuchittoor1668@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/chittoor-manjunath-397ab424b/" target="_blank">Myprofile</a></p>
+            <p>GitHub: <a href="https://github.com/manju590" target="_blank">Myprofile</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 . All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
